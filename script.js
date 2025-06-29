@@ -1,5 +1,6 @@
-const container = document.querySelector(".container")
-const card = document.querySelector(".index")
+
+
+
 const input = document.querySelector("#input-box")
 const button = document.querySelector("#button")
 const task = document.querySelector(".task-list")
