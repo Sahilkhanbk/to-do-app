@@ -8,6 +8,13 @@ button.addEventListener("click", () => {
     const li = document.createElement("li")
     li.className = "li-task"
     li.innerHTML = input.value;
+
+    const delB = document.createElement(span)
+    delB.innerHTML = "Delete";
+    li.appendChild(span);
+
+
+    
     task.appendChild(li)
     input.value = ""
 
