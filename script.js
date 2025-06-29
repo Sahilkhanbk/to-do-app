@@ -5,17 +5,23 @@ const button = document.querySelector("#button")
 const task = document.querySelector(".task-list")
 
 button.addEventListener("click", () => {
-    const li = document.createElement("li")
-    li.className = "li-task"
+    const li = document.createElement("li");
+    li.className = "li-task";
     li.innerHTML = input.value;
 
-    const delB = document.createElement(span)
-    delB.innerHTML = "Delete";
-    li.appendChild(span);
+
+    //create a delete button
+    const delB = document.createElement("span");
+    delB.textContent = "{-";
+    delB.className = "deleteButton";
+    li.appendChild(delB);
 
 
-    
     task.appendChild(li)
     input.value = ""
 
+    //create function to click and delete
+    delB.addEventListener("click", ()=>{
+        li.remove()
+    })
 })
