@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+
+.deleteButton{
+    margin-left: 14rem;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    margin-right: 0px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
