@@ -4,67 +4,65 @@
     box-sizing: border-box;
 }
 
-
-.deleteButton{
-    margin-left: 14rem;
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 600;
-    position: absolute;
-    margin-right: 0px;
-}
-
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    margin-top: 6rem;
-    background-color: rgb(250, 249, 249);
+    margin-top: 10rem;
+    margin-left: 40rem;
+    position: relative;
+}
+
+.input-box {
+    width: 26rem;
+    height: 2.9rem;
+    font-size: 1.6rem;
+    padding: 1.8rem;
+    border-radius: 2px;
+    /* border: 1px; */
+}
+
+.btn {
+    width: 5rem;
+    height: 3.7rem;
+    margin-left: 1rem;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+}
+
+.sp {
+    position: absolute;
+    margin-left: 25rem;
+    margin-bottom: 200rem;
 
 }
 
-.index {
-    margin-top: 3rem;
-    height: 3rem;
-    width: 23rem;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+.delete {
+    position: absolute;
+    padding: 7px;
+    width: 2.1rem;
+    height: 2.3rem;
+    font-weight: 900;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    margin-left: 11rem;
 }
 
-#input-box {
-    width: 15rem;
-    height: 3rem;
+.complete {
+    padding: 7px;
+    width: 2.1rem;
+    height: 2.3rem;
+    font-weight: 900;
+    border-radius: 50%;
+    background-color: green;
+    color: #fff;
+    margin-left: 14rem;
+}
+
+.lists {
     padding: 10px;
-    border-radius: 5px;
-    font-size: 22px;
-
-}
-
-#button {
-    width: 6rem;
-    border-radius: 5px;
-    height: 3rem;
-    padding: 10px;
-    font-size: 19px;
-}
-
-.task-list {
-    list-style-position: inside;
-    padding-left: 0px;
-    margin-top: 20px;
-    width: 100%;
-    text-align: left;
-    max-width: 20rem;
-}
-
-.li-task {
-    list-style: none;
-    margin-bottom: 8px;
-    font-size: 25px;
-    /* margin-top: 2px;
-    margin-left: 2px; */
-
+    font-size: 1.9rem;
 }
