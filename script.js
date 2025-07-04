@@ -1,28 +1,39 @@
+const input = document.querySelector(".input-box")
+const ulTask = document.querySelector(".task")
+const btn = document.querySelector(".btn")
+// const deleteE = document.querySelector(".delete")
 
+btn.addEventListener("click", () => {
+    let li = document.createElement("li");
+    li.className = "lists"
+    li.textContent = input.value;
 
+    ulTask.appendChild(li)
 
-const input = document.querySelector("#input-box")
-const button = document.querySelector("#button")
-const task = document.querySelector(".task-list")
+    let span = document.createElement("span");
 
-button.addEventListener("click", () => {
-    const li = document.createElement("li");
-    li.className = "li-task";
-    li.innerHTML = input.value;
+    let deleteB = document.createElement("button");
+    deleteB.className = "delete";
+    deleteB.textContent = "";
 
+    let complete = document.createElement("button");
+    complete.className = "complete";
+    complete.textContent = "";
 
-    //create a delete button
-    const delB = document.createElement("span");
-    delB.textContent = "{-";
-    delB.className = "deleteButton";
-    li.appendChild(delB);
+    li.appendChild(deleteB)
+    li.appendChild(complete)
 
+    input.value = "";
 
-    task.appendChild(li)
-    input.value = ""
+    deleteB.addEventListener("click", () => {
+        ulTask.removeChild(li)
+    })
 
-    //create function to click and delete
-    delB.addEventListener("click", ()=>{
-        li.remove()
+    complete.addEventListener("click", ()=>{
+        li.style.textDecoration = "line-through";
+        li.style.color = "green";
     })
 })
+
+
+
